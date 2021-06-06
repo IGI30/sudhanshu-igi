@@ -19,7 +19,7 @@ function App() {
           <Landing/>
         </header>
         <section>
-          Some body
+          {/* Some body */}
         </section>
     </div>
   );

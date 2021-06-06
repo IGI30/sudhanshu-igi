@@ -49,15 +49,25 @@ const Landing = (props) => {
                         <i className="fa fa-linkedin"></i>
                     </a>
                 </li>
+                <li className="list-inline-item social-buttons">
+                    <a className="internal-anchor" href="https://www.facebook.com/IGI.Sudhanshu/">
+                        <i className="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li className="list-inline-item social-buttons">
+                    <a className="internal-anchor" href="https://www.instagram.com/sudhanshuigi/">
+                        <i className="fa fa-instagram"></i>
+                    </a>
+                </li>
             </ul>
             <br/>
-            <p>Welcome to Sudhanshu IGI's <u>homepage</u>.<br/>I'm a data analysis and data visualisation
-                specialist currently
-                working as a Senior software Engineer for <a className="internal-anchor" href="https://research.samsung.com/sri-b">Samsung Research</a>.
-            </p>
-            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-               href="#description">Visit</a>
-            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
+            <p>Welcome to Sudhanshu IGI's <u>homepage</u>.
+            <br/>I'm a data analysis and data visualisation
+                specialist currently working as a Senior software Engineer for <a className="internal-anchor" href="https://research.samsung.com/sri-b">Samsung Research</a>.
+            </p><br/>
+            <a className="btn m-btn-primary btn-xl text-uppercase"
+               href="#description">Portfolio</a>
+            <a className="btn m-btn-primary btn-xl text-uppercase ms-2"
                href="#contact">Contact</a>
         </div>
     );
