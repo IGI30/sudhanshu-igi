@@ -2,6 +2,7 @@ import './App.css';
 import {NavBar, NavItem} from './components/nav/Nav';
 import React from "react";
 import Landing from "./components/landing/Landing";
+import About from './components/about/About';
 
 function App() {
   return (
@@ -15,12 +16,8 @@ function App() {
             <NavItem title="Blog"/>
             <NavItem title="Contact"/>
         </NavBar>
-        <header className="masterhead">
-          <Landing/>
-        </header>
-        <section>
-          {/* Some body */}
-        </section>
+        <Landing/>
+        <About/>
     </div>
   );
 }
