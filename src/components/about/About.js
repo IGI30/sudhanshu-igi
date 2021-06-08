@@ -7,7 +7,7 @@ const About = (props) => {
                 <h6 className="section-label">About Us</h6>
                 <h2 className="section-head">Who am I?</h2><br/>
                 <p>
-                    <b><u>Hi I'm Sudhanshu IGI On his way to become Rich</u></b>. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                    <b><u>Hi I'm Sudhanshu IGI On his way to become Wealthy</u></b>. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
                 </p>
                 <p>
                     Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.

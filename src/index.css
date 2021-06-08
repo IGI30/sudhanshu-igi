@@ -352,7 +352,7 @@ section.full-section {
 .full-section .container {
   margin: auto;
   text-align: left;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .section-label {
@@ -364,4 +364,62 @@ section.full-section {
 .section-head {
   text-transform: uppercase;
   font-family: 'FontAwesome';
+}
+
+.card-detail-root {
+  position: relative;
+  box-shadow: rgb(255 255 255 / 15%) 3px 3px 30px 0px;
+  background-color: rgb(52, 58, 64);
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+
+.card-detail-root .top-icon {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  right: 0px;
+  width: 100px;
+  height: 50px;
+  display: table;
+  margin: 0px auto;
+}
+
+span.top-icon::before {
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 30px 50px;
+}
+
+span.top-icon::after {
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 50px 0 50px;
+}
+
+span.top-icon::before, span.top-icon::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: '';
+}
+
+span.top-icon i {
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.card-detail-root .card-title {
+  font-family: Quicksand, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 4rem;
+  text-transform: uppercase;
 }

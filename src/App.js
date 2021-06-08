@@ -3,6 +3,7 @@ import {NavBar, NavItem} from './components/nav/Nav';
 import React from "react";
 import Landing from "./components/landing/Landing";
 import About from './components/about/About';
+import Expertise from './components/about/Expertise';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         </NavBar>
         <Landing/>
         <About/>
+        <Expertise/>
     </div>
   );
 }
