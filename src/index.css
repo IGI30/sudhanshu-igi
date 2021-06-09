@@ -23,6 +23,13 @@ code {
   --speed: 500ms;
   --anchor-color: #26c6da;
   --anchor-hover-color: #03a9f4;
+
+  --color-1: #2c98f0;
+  --color-2: #ec5453;
+  --color-3: #f9bf3f;
+  --color-4: #a84db8;
+  --color-5: #2fa499;
+  --color-6: #4054b2;
 }
 
 ul {
@@ -366,6 +373,23 @@ section.full-section {
   font-family: 'FontAwesome';
 }
 
+/* Card Icon CSS */
+
+.card-icon-root {
+  box-shadow: rgb(255 255 255 / 15%) 3px 3px 30px 0px;
+  border-bottom: 2px solid rgb(44, 152, 240);
+  background-color: rgb(52, 58, 64);
+  padding: 1.5rem;
+}
+
+.card-icon-root .card-title {
+  font-family: Quicksand, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Card Detailed CSS */
+
 .card-detail-root {
   position: relative;
   box-shadow: rgb(255 255 255 / 15%) 3px 3px 30px 0px;
@@ -409,7 +433,7 @@ span.top-icon::before, span.top-icon::after {
 }
 
 span.top-icon i {
-  font-size: 30px;
+  font-size: 2rem;
   color: #fff;
   z-index: 1;
   display: table-cell;
@@ -422,4 +446,151 @@ span.top-icon i {
   font-weight: 700;
   margin-top: 4rem;
   text-transform: uppercase;
+}
+
+/* Color Palets */
+
+.card-detail-root.color-1, .card-icon-root.color-1 {
+  border-bottom: 2px solid var(--color-1);
+}
+.card-detail-root.color-1 .top-icon, .progress-bar.color-1:after, .progress-bar.color-1 {
+  background: var(--color-1);
+}
+.card-detail-root.color-1 .top-icon:before {
+  border-color: transparent transparent var(--color-1) transparent;
+}
+.card-detail-root.color-1 .top-icon:after {
+  border-color: var(--color-1) transparent transparent transparent;
+}
+.card-icon-root.color-1 span i, .progress-bar.color-1 span {
+  color: var(--color-1);
+}
+
+.card-detail-root.color-2, .card-icon-root.color-2 {
+  border-bottom: 2px solid var(--color-2);
+}
+.card-detail-root.color-2 .top-icon, .progress-bar.color-2:after, .progress-bar.color-2 {
+  background: var(--color-2);
+}
+.card-detail-root.color-2 .top-icon:before {
+  border-color: transparent transparent var(--color-2) transparent;
+}
+.card-detail-root.color-2 .top-icon:after {
+  border-color: var(--color-2) transparent transparent transparent;
+}
+.card-icon-root.color-2 span i, .progress-bar.color-2 span {
+  color: var(--color-2);
+}
+
+.card-detail-root.color-3, .card-icon-root.color-3 {
+  border-bottom: 2px solid var(--color-3);
+}
+.card-detail-root.color-3 .top-icon, .progress-bar.color-3:after, .progress-bar.color-3 {
+  background: var(--color-3);
+}
+.card-detail-root.color-3 .top-icon:before {
+  border-color: transparent transparent var(--color-3) transparent;
+}
+.card-detail-root.color-3 .top-icon:after {
+  border-color: var(--color-3) transparent transparent transparent;
+}
+.card-icon-root.color-3 span i, .progress-bar.color-3 span {
+  color: var(--color-3);
+}
+
+.card-detail-root.color-4, .card-icon-root.color-4 {
+  border-bottom: 2px solid var(--color-4);
+}
+.card-detail-root.color-4 .top-icon, .progress-bar.color-4:after, .progress-bar.color-4 {
+  background: var(--color-4);
+}
+.card-detail-root.color-4 .top-icon:before {
+  border-color: transparent transparent var(--color-4) transparent;
+}
+.card-detail-root.color-4 .top-icon:after {
+  border-color: var(--color-4) transparent transparent transparent;
+}
+.card-icon-root.color-4 span i, .progress-bar.color-4 span {
+  color: var(--color-4);
+}
+
+.card-detail-root.color-5, .card-icon-root.color-5 {
+  border-bottom: 2px solid var(--color-5);
+}
+.card-detail-root.color-5 .top-icon, .progress-bar.color-5:after, .progress-bar.color-5 {
+  background: var(--color-5);
+}
+.card-detail-root.color-5 .top-icon:before {
+  border-color: transparent transparent var(--color-5) transparent;
+}
+.card-detail-root.color-5 .top-icon:after {
+  border-color: var(--color-5) transparent transparent transparent;
+}
+.card-icon-root.color-5 span i, .progress-bar.color-5 span {
+  color: var(--color-5);
+}
+
+.card-detail-root.color-6, .card-icon-root.color-6 {
+  border-bottom: 2px solid var(--color-6);
+}
+.card-detail-root.color-6 .top-icon, .progress-bar.color-6:after, .progress-bar.color-6 {
+  background: var(--color-6);
+}
+.card-detail-root.color-6 .top-icon:before {
+  border-color: transparent transparent var(--color-6) transparent;
+}
+.card-detail-root.color-6 .top-icon:after {
+  border-color: var(--color-6) transparent transparent transparent;
+}
+.card-icon-root.color-6 span i, .progress-bar.color-6 span {
+  color: var(--color-6);
+}
+
+/* Skill Bar CSS */
+
+.skill-bar-root h3 {
+  font-size: 16px;
+  font-family: "Quicksand", Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.skill-bar-root .progress {
+  height: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #343a40;
+  overflow: visible;
+  margin-bottom: 2.5rem;
+}
+
+.progress-bar span {
+  color: #2c98f0;
+  position: absolute;
+  top: -22px;
+  right: 0;
+}
+
+.progress-bar:after {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  content: '';
+  background: #2c98f0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.progress .progress-bar {
+  line-height: 1.2;
+  font-weight: 600;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
 }

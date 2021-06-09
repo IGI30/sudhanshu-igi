@@ -4,6 +4,7 @@ import React from "react";
 import Landing from "./components/landing/Landing";
 import About from './components/about/About';
 import Expertise from './components/about/Expertise';
+import Skills from './components/about/Skills';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Landing/>
         <About/>
         <Expertise/>
+        <Skills/>
     </div>
   );
 }
