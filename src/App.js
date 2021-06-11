@@ -5,6 +5,7 @@ import Landing from "./components/landing/Landing";
 import About from './components/about/About';
 import Expertise from './components/about/Expertise';
 import Skills from './components/about/Skills';
+import Education from './components/about/Education';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <About/>
         <Expertise/>
         <Skills/>
+        <Education/>
     </div>
   );
 }

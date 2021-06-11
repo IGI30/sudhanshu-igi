@@ -21,7 +21,7 @@ const About = (props) => {
     ];
 
     const cardRenderer = aboutCardDetails.map((details, i) => 
-        <div className="col-md-3 col-sm-6">
+        <div className="col-md-3 col-sm-6" key={i}>
             <IconCard icon={details.icon} title={details.title} colorClass={i+1} />
         </div>
     );

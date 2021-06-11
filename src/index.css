@@ -30,6 +30,8 @@ code {
   --color-4: #a84db8;
   --color-5: #2fa499;
   --color-6: #4054b2;
+
+  --card-bg: rgb(52, 58, 64);
 }
 
 ul {

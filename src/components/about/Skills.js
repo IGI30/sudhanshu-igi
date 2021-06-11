@@ -29,7 +29,7 @@ const Skills = (props) => {
     ];
 
     const skillsRenderer = skillDetails.map((details, i) => 
-        <div className="col-md-6">
+        <div className="col-md-6" key={i}>
             <SkillBar skill={details.skill} value={details.value} colorClass={i+1} />
         </div>
     );
