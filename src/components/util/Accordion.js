@@ -30,15 +30,14 @@ const Accordion = (props) => {
                 <p className="accordion__title">{props.title}</p>
                 <Chevron className={`${setRotate}`} width={10} fill={"lightgray"} />
             </button>
-            <div
-                ref={content}
-                style={{ maxHeight: `${setHeight}` }}
-                className="accordion__content"
-            >
-                <div
+            <div ref={content} style={{ maxHeight: `${setHeight}` }}
+                className="accordion__content">
+                
+                <div className="accordion__text">{ props.children }</div>
+                {/* <div
                     className="accordion__text"
                     dangerouslySetInnerHTML={{ __html: props.content }}
-                />
+                /> */}
             </div>
         </div>
     );
