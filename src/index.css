@@ -30,12 +30,14 @@ code {
   --color-4: #a84db8;
   --color-5: #2fa499;
   --color-6: #4054b2;
+  --color-7: #38436f;
 
   --card-bg: rgb(52, 58, 64);
+  --card-bg-darker: #242526;
 }
 
 ul {
-  list-style: none;
+  /* list-style: none; */
   margin: 0;
   padding: 0;
 }
