@@ -64,7 +64,7 @@ const Landing = (props) => {
                 <br/>
                 <p>Welcome to Sudhanshu IGI's <u>homepage</u>.
                 <br/>I'm a data analysis and data visualisation
-                    specialist currently working as a Senior software Engineer for <a className="internal-anchor" href="https://research.samsung.com/sri-b">Samsung Research</a>.
+                    specialist currently working as a Senior Software Engineer for <a className="internal-anchor" href="https://research.samsung.com/sri-b">Samsung Research</a>.
                 </p><br/>
                 <a className="btn m-btn-primary btn-xl text-uppercase"
                 href="#description">Portfolio</a>

@@ -40,8 +40,8 @@ const Experience = (props) => {
                 <ul>
                     <li>Frontend development using <u>VueJs</u>, Backend development using <u>Laravel & Lumen</u>.</li>
                     <li>Admin panel dashboard development in production mode.</li>
-                    <li>Android App development in production mode.</li>
-                    <li>iOS App Development in development mode.</li>
+                    <li><u>Android App development</u> in production mode.</li>
+                    <li><u>iOS App Development</u> in development mode.</li>
                     <li>Full project planning, database structure planning & development of <u>Inventory Management</u> feature for <u>e-commerce based application</u>.</li>
                 </ul>
             `
@@ -75,10 +75,10 @@ const TimelineCard = (props) => {
     return (
         <article className="timeline-entry">
             <div className="timeline-entry-inner">
-                <div class={`timeline-icon color-${props.colorClass}`}>
-                    <i class="fa fa-code"></i>
+                <div className={`timeline-icon color-${props.colorClass}`}>
+                    <i className="fa fa-code"></i>
                 </div>
-                <div class="timeline-label">
+                <div className="timeline-label">
                     <h2>{ props.timeline.position } <i>at { props.timeline.organization }</i></h2>
                     <h6><span>{ props.timeline.year }</span></h6>
                     <p dangerouslySetInnerHTML={{ __html: props.timeline.description }}>{  }</p>
@@ -90,9 +90,9 @@ const TimelineCard = (props) => {
 
 const TimelineCardEnd = () => {
     return (
-        <article class="timeline-entry begin animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
-            <div class="timeline-entry-inner">
-            <div class="timeline-icon color-none">
+        <article className="timeline-entry begin animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+            <div className="timeline-entry-inner">
+            <div className="timeline-icon color-none">
             </div> </div>
         </article>
     );
