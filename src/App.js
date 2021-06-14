@@ -8,6 +8,7 @@ import Skills from './components/about/Skills';
 import Education from './components/about/Education';
 import Experience from './components/about/Experience';
 import Work from './components/about/Work';
+import NarrowContent from './components/about/NarrowContent';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Landing/>
         <About/>
         <Expertise/>
+        <NarrowContent/>
         <Skills/>
         <Education/>
         <Experience/>

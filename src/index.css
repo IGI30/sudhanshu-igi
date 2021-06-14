@@ -717,3 +717,53 @@ span.top-icon i {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+/* Narrow Content CSS */
+
+.colorlib-counters {
+  padding: 3em 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  clear: both;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+.colorlib-counters .overlay {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.colorlib-narrow-content {
+  padding: 0 2.5em;
+}
+
+.colorlib-narrow-content .row div {
+  z-index: 1;
+}
+
+.colorlib-counters .colorlib-counter {
+  font-size: 40px;
+  display: block;
+  color: white;
+  font-family: "Quicksand", Arial, sans-serif;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: .3em;
+}
+
+.colorlib-counters .colorlib-counter-label {
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+  margin-bottom: 2em;
+  display: block;
+}
