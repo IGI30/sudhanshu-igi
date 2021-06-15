@@ -366,6 +366,13 @@ section.full-section {
   max-width: 900px;
 }
 
+.full-section .container:before {
+  content: "";
+  display: inline-block;
+  height: 10%;
+  min-height: 50px;
+}
+
 .section-label {
   text-transform: uppercase;
   font-weight: lighter;
@@ -626,7 +633,7 @@ span.top-icon i {
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--bs-gray-dark);
+  background: #eeeeee;
   opacity: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -658,13 +665,13 @@ span.top-icon i {
 }
 
 .project .desc h3 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
 .project .desc span {
   display: block;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 13px;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -674,6 +681,7 @@ span.top-icon i {
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
+  cursor: default;
 }
 
 .project .desc .con .icon {

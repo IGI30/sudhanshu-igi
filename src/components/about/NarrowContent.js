@@ -6,11 +6,11 @@ const NarrowContent = (props) => {
     const contentDetails = [
         {
             'name': 'Cups of Coffee',
-            'value': 319
+            'value': 47
         },
         {
             'name': 'Projects',
-            'value': 13
+            'value': 31
         },
         {
             'name': 'Girlfriend',

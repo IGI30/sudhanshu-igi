@@ -35,17 +35,17 @@ const Expertise = (props) => {
     ];
 
     const cardRender = cardDetails.map((card, i) => 
-        <div className="col-md-4 col-sm-6" key={i}>
+        <div className="col-md-4 col-sm-6 mb-4" key={i}>
             <DetailedCard icon={card.icon} title={card.title} description={card.description} colorClass={i+1} />
         </div>
     )
 
     return (
         <section className="full-section">
-            <div className="container">
+            <div className="container mb-5">
                 <h6 className="section-label">What I Do?</h6>
                 <h2 className="section-head">Here are some of my expertise</h2><br/>
-                <div className="row">
+                <div className="row mb-5">
                     { cardRender }
                 </div>
             </div>

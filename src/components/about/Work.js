@@ -15,7 +15,7 @@ const Work = (props) => {
             {
                 'name': 'Buku - Book Recommendataion System',
                 'technologies': ['Kotlin', 'Java', 'Firebase', 'Django'],
-                'description': `A adnroid application which will recommend books to the users based on their interests and currently liked books using Item-based and user-based collaborative filtering.`,
+                'description': `A android application which will recommend books to the users based on their interests and currently liked books using Item-based and user-based collaborative filtering.`,
                 'link': null,
                 'year': '2018'
             }

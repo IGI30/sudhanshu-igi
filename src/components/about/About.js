@@ -3,25 +3,25 @@ import React from "react";
 const About = (props) => {
     const aboutCardDetails = [
         {
-            'icon': 'mobile',
-            'title': 'Mobile App'
+            'icon': 'futbol-o',
+            'title': 'Football'
         },
         {
             'icon': 'globe',
-            'title': 'Web App'
+            'title': 'Books'
         },
         {
-            'icon': 'database',
-            'title': 'Data Science'
+            'icon': 'male',
+            'title': 'Workout'
         },
         {
             'icon': 'gamepad',
-            'title': 'Game Dev'
+            'title': 'Video Games'
         }
     ];
 
     const cardRenderer = aboutCardDetails.map((details, i) => 
-        <div className="col-md-3 col-sm-6" key={i}>
+        <div className="col-md-3 col-sm-6 col-6" key={i}>
             <IconCard icon={details.icon} title={details.title} colorClass={i+1} />
         </div>
     );
