@@ -56,7 +56,7 @@ const RecentBlog = (props) => {
                 <div className="row mb-5">
                     <div className="col-md-12">
                         <p>
-                            <a href="#" className="btn btn-lg load-more">
+                            <a onClick={ (event) => event.preventDefault() } href="#" className="btn btn-lg load-more">
                                 Load more <i className="fa fa-refresh"></i>
                             </a>
                         </p>
