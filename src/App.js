@@ -9,6 +9,7 @@ import Education from './components/about/Education';
 import Experience from './components/about/Experience';
 import Work from './components/about/Work';
 import NarrowContent from './components/about/NarrowContent';
+import RecentBlog from './components/about/RecentBlog';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Education/>
         <Experience/>
         <Work/>
+        <RecentBlog/>
     </div>
   );
 }
