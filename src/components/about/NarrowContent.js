@@ -27,9 +27,9 @@ const NarrowContent = (props) => {
     );
 
     return (
-        <div className="colorlib-counters" style={ { backgroundImage : `url(${narrowBg})` } }>
+        <div className="narrow-counters" style={ { backgroundImage : `url(${narrowBg})` } }>
             <div className="overlay"></div>
-            <div className="colorlib-narrow-content">
+            <div className="counters-narrow-counters">
                 <div className="row">
                     { contentRenderer }
                 </div>
@@ -41,8 +41,8 @@ const NarrowContent = (props) => {
 const Content = (props) => {
     return (
         <div className='col-lg-3 col-md-6 col-sm-12 text-center'>
-            <span className="colorlib-counter js-counter">{ props.value }</span>
-            <span className="colorlib-counter-label">{ props.name }</span>
+            <span className="narrow-counter js-counter">{ props.value }</span>
+            <span className="narrow-counter-label">{ props.name }</span>
         </div>
     );
 };

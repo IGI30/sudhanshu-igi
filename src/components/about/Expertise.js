@@ -44,7 +44,7 @@ const Expertise = (props) => {
         <section className="full-section">
             <div className="container mb-5">
                 <h6 className="section-label">What I Do?</h6>
-                <h2 className="section-head">Here are some of my expertise</h2><br/>
+                <h2 className="section-head col-md-6">Here are some of my expertise</h2><br/>
                 <div className="row mb-5">
                     { cardRender }
                 </div>

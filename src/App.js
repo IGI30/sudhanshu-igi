@@ -10,6 +10,8 @@ import Experience from './components/about/Experience';
 import Work from './components/about/Work';
 import NarrowContent from './components/about/NarrowContent';
 import RecentBlog from './components/about/RecentBlog';
+import Contact from './components/about/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Experience/>
         <Work/>
         <RecentBlog/>
+        <Contact/>
+        <Footer/>
     </div>
   );
 }
