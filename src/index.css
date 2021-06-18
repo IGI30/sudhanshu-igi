@@ -627,12 +627,33 @@ span.top-icon i {
 
 /* Work Component CSS */
 
-.text-white .nav-link {
+.tab-nav .nav-link:focus, .tab-nav .nav-link:hover {
   color: white;
 }
 
-.text-white .nav-link:focus, .text-white .nav-link:hover {
+.tab-nav .nav-link {
+  padding: 0.5rem 0.2rem;
+  margin-right: 1rem;
+  font-size: smaller;
   color: var(--bs-gray);
+}
+
+.nav-tabs.tab-nav .nav-item.show .nav-link, .nav-tabs.tab-nav .nav-link.active, 
+.nav-tabs.tab-nav .nav-link.active:hover, .nav-tabs.tab-nav .nav-link.active:focus {
+  color: #fff;
+  background: transparent;
+  border-bottom-color: #fff;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.nav-tabs.tab-nav .nav-link:focus, .nav-tabs.tab-nav .nav-link:hover {
+  border-color: transparent;
+}
+
+.nav-tabs.tab-nav {
+  border: none;
 }
 
 .project {
