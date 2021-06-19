@@ -105,7 +105,7 @@ const Work = (props) => {
                 <h6 className="section-label">My Work</h6>
                 <h2 className="section-head">Recent Work</h2><br/>
                 <Tab.Container defaultActiveKey="mobile">
-                    <Nav variant="tabs" className="flex-row mt-5 text-white">
+                    <Nav variant="tabs" className="flex-row mt-5 tab-nav">
                         <Nav.Item>
                             <Nav.Link eventKey="mobile">Mobile</Nav.Link>
                         </Nav.Item>
