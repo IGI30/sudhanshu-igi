@@ -46,7 +46,7 @@ const RecentBlog = (props) => {
     )
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="recentBlog">
             <div className="container">
                 <h6 className="section-label">Read</h6>
                 <h2 className="section-head">Recent Blog</h2><br/>
@@ -56,9 +56,9 @@ const RecentBlog = (props) => {
                 <div className="row mb-5">
                     <div className="col-md-12">
                         <p>
-                            <a onClick={ (event) => event.preventDefault() } href="#" className="btn btn-lg load-more">
+                            <button onClick={ (event) => event.preventDefault() } className="btn btn-lg load-more">
                                 Load more <i className="fa fa-refresh"></i>
-                            </a>
+                            </button>
                         </p>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ const Education = (props) => {
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="education">
             <div className="container">
                 <h6 className="section-label">Education</h6>
                 <h2 className="section-head">Education</h2><br/>

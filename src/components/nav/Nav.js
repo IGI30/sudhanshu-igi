@@ -26,11 +26,11 @@ const NavBar = (props) => {
     return (
         <nav className="m-navbar" ref={navRef}>
             <ul className="m-navbar-home">
-                <NavIcon icon="🏠" />
+                <NavIcon icon="🏠" link="/" />
                 <li className="nav-icon small-screen" onClick={toggleNavClass}>
-                    <a href="#" onClick={ (event) => event.preventDefault() } className="icon text-white-50">
+                    <button onClick={ (event) => event.preventDefault() } className="btn-icon text-white-50">
                         <i className={`fa ${isActive? 'fa-times': 'fa-bars'}`}></i>
-                    </a>
+                    </button>
                 </li>
             </ul>
             <ul className={`m-navbar-nav ${isActive? 'nav-mobile-expanded': ''}`}>
@@ -43,7 +43,7 @@ const NavBar = (props) => {
 function NavItem(props) {
     return (
         <li className="nav-item-head">
-            <a href="#" className="nav-item-title">
+            <a href={ props.link? props.link: '/' } className="nav-item-title">
                 { props.title }
             </a>
         </li>
@@ -53,7 +53,7 @@ function NavItem(props) {
 function NavIcon(props) {
     return (
         <li className="nav-icon">
-            <a href="#" className="icon-button">
+            <a href={ props.link? props.link: '/' } className="icon-button">
                 { props.icon }
             </a>
         </li>

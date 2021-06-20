@@ -157,6 +157,11 @@ p {
   justify-content: center;
 }
 
+.nav-icon .btn-icon {
+  border: none;
+  background: transparent;
+}
+
 /* <li> */
 .nav-item-title {
   --button-size: calc(var(--nav-size) * 1.5);
@@ -711,9 +716,11 @@ span.top-icon i {
   margin-bottom: 15px;
 }
 
-.project .desc h3 a {
+.project .desc h3 a, .project .desc h3 button {
   color: #000;
   text-decoration: none;
+  border: none;
+  padding-left: 0;
 }
 
 .project .desc span {
@@ -901,7 +908,7 @@ span.top-icon i {
   text-align: justify;
 }
 
-a.load-more {
+button.load-more {
   background-color: var(--card-bg) !important;
   color: #fff;
   font-weight: 600;
@@ -910,7 +917,7 @@ a.load-more {
   border-radius: 0;
 }
 
-a.load-more:hover {
+button.load-more:hover {
   background-color: var(--color-1) !important;
   color: #fff;
 }

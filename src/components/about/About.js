@@ -27,7 +27,7 @@ const About = (props) => {
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="about">
             <div className="container">
                 <h6 className="section-label">About Us</h6>
                 <h2 className="section-head">Who am I?</h2><br/>

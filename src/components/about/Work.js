@@ -100,7 +100,7 @@ const Work = (props) => {
     };
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="work">
             <div className="container">
                 <h6 className="section-label">My Work</h6>
                 <h2 className="section-head">Recent Work</h2><br/>
@@ -156,7 +156,7 @@ const ProjectCard = (props) => {
                         {
                             props.project.link?
                             <a rel="noopener noreferrer" target="_blank" href={ props.project.link }>{ props.project.name }</a>:
-                            <a href="#" onClick={ (event) => event.preventDefault() }>{ props.project.name }</a>
+                            <button href="#" onClick={ (event) => event.preventDefault() }>{ props.project.name }</button>
                         }
                     </h3>
                     <span>

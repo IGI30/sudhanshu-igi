@@ -35,7 +35,7 @@ const Skills = (props) => {
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="skills">
             <div className="container">
                 <h6 className="section-label">My Speciality</h6>
                 <h2 className="section-head">My Skills</h2><br/>

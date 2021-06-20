@@ -53,7 +53,7 @@ const Experience = (props) => {
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="experience">
             <div className="container">
                 <h6 className="section-label">Experience</h6>
                 <h2 className="section-head">Work Experience</h2><br/>
