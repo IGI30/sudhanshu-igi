@@ -28,7 +28,7 @@ const NavBar = (props) => {
             <ul className="m-navbar-home">
                 <NavIcon icon="🏠" />
                 <li className="nav-icon small-screen" onClick={toggleNavClass}>
-                    <a className="icon text-white-50">
+                    <a href="#" onClick={ (event) => event.preventDefault() } className="icon text-white-50">
                         <i className={`fa ${isActive? 'fa-times': 'fa-bars'}`}></i>
                     </a>
                 </li>

@@ -90,7 +90,7 @@ p {
 }
 
 /* Small Screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .m-navbar-nav {
     padding: 0;
   }
@@ -320,6 +320,13 @@ p {
 /* Small Screens */
 @media only screen and (max-width: 768px) {
 
+}
+
+/* Small Screens */
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+  .text-landing {
+    padding: 0em 0.75em;
+  }
 }
 
 /* Large Screens */
@@ -952,16 +959,43 @@ a.load-more:hover {
   font-size: 40px;
 }
 
-@media screen and (max-width: 1200px) {
+.contact-card .contact-card-text {
+  margin-left: 120px;
+  word-break: break-word;
+  margin-top: 30px;
+  /* width: 100%; */
+}
+
+/* Small Screens */
+@media screen and (max-width: 374px) {
+  .contact-card {
+    margin-bottom: 20px;
+  }
+
   .contact-card .contact-card-icon i {
-      font-size: 28px;
+    font-size: 14px;
+  }
+
+  .contact-card .contact-card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-card .contact-card-icon i {
+    height: 50px;
+  }
+
+  .contact-card .contact-card-text {
+    margin-left: 60px;
+    margin-top: 10px;
   }
 }
 
-.contact-card .contact-card-text {
-  padding-left: 120px;
-  margin-top: 30px;
-  width: 100%;
+/* Large Screens */
+@media only screen and (min-width: 374px) {
+  .contact-card .contact-card-icon i {
+    font-size: 28px;
+  }
 }
 
 .contact-card .contact-card-text p a {

@@ -73,7 +73,7 @@ const BlogCard = (props) => {
     return (
         <div className="col-md-4 col-sm-6">
             <div className="blog-entry">
-                <a href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`} target="_blank" className="blog-img">
+                <a href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`} target="_blank" rel="noopener noreferrer" className="blog-img">
                     <img src={props.cover_thumbnail} className="img-responsive" alt={props.title} />
                 </a>
                 <div className="desc">
@@ -83,7 +83,7 @@ const BlogCard = (props) => {
                         <small> <i className="fa fa-eye"></i> {props.view_count}</small>
                     </span>
                     <h3>
-                        <a target="_blank" href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`}>{props.title}</a>
+                        <a target="_blank" rel="noopener noreferrer" href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`}>{props.title}</a>
                     </h3>
                     <p dangerouslySetInnerHTML={{ __html: props.description.substring(0, 200) }}></p>
                 </div>

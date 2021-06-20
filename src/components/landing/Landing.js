@@ -14,7 +14,7 @@ const Landing = (props) => {
         marginBottom: '20px',
         marginRight: '15px',
         marginLeft: '15px',
-        width: '80px'
+        width: '60px'
     };
 
     const hrStyle = {

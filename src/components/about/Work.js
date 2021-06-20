@@ -155,14 +155,14 @@ const ProjectCard = (props) => {
                     <h3>
                         {
                             props.project.link?
-                            <a target="_blank" href={ props.project.link }>{ props.project.name }</a>:
+                            <a rel="noopener noreferrer" target="_blank" href={ props.project.link }>{ props.project.name }</a>:
                             <a href="#" onClick={ (event) => event.preventDefault() }>{ props.project.name }</a>
                         }
                     </h3>
                     <span>
                         {
                             props.project.technologies.map((technology, i) =>
-                                `${ technology }${ i == props.project.technologies.length - 1? '': ' | ' }`
+                                `${ technology }${ i === props.project.technologies.length - 1? '': ' | ' }`
                             )
                         }
                     </span><br/>

@@ -22,7 +22,7 @@ const Accordion = (props) => {
 
     useEffect(() => {
         if (props.active) toggleAccordion();
-    }, []);
+    }, [props.active]);
 
     return (
         <div className="accordion__section">

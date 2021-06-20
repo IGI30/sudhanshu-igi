@@ -24,7 +24,7 @@ const Education = (props) => {
     ];
 
     const detailsRenderer = eductionDetails.map((education, i) => 
-        <Accordion key={i} title={education.title} active={i == 0}>
+        <Accordion key={i} title={education.title} active={i === 0}>
             <EducationInfo name={education.name} year={education.year} percentage={education.percentage} />
         </Accordion>
     );
