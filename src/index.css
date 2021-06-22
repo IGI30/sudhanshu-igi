@@ -41,6 +41,18 @@ code {
   background: #2c98f0;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6c757d;
+}
+
 ul {
   /* list-style: none; */
   margin: 0;
@@ -178,6 +190,7 @@ p {
   color: white;
   font-weight: 200;
   font-size: small;
+  width: 100%;
 }
 
 .nav-item-head:hover .nav-item-title {
