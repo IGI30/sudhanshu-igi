@@ -18,7 +18,7 @@ const NarrowContent = (props) => {
         },
         {
             'name': 'Books Read',
-            'value': 8
+            'value': 10
         }
     ];
 
