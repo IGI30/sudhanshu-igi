@@ -46,7 +46,7 @@ const RecentBlog = (props) => {
     )
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="recentBlog">
             <div className="container">
                 <h6 className="section-label">Read</h6>
                 <h2 className="section-head">Recent Blog</h2><br/>
@@ -56,9 +56,9 @@ const RecentBlog = (props) => {
                 <div className="row mb-5">
                     <div className="col-md-12">
                         <p>
-                            <a onClick={ (event) => event.preventDefault() } href="#" className="btn btn-lg load-more">
+                            <button onClick={ (event) => event.preventDefault() } className="btn btn-lg load-more">
                                 Load more <i className="fa fa-refresh"></i>
-                            </a>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ const BlogCard = (props) => {
     return (
         <div className="col-md-4 col-sm-6">
             <div className="blog-entry">
-                <a href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`} target="_blank" className="blog-img">
+                <a href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`} target="_blank" rel="noopener noreferrer" className="blog-img">
                     <img src={props.cover_thumbnail} className="img-responsive" alt={props.title} />
                 </a>
                 <div className="desc">
@@ -83,7 +83,7 @@ const BlogCard = (props) => {
                         <small> <i className="fa fa-eye"></i> {props.view_count}</small>
                     </span>
                     <h3>
-                        <a target="_blank" href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`}>{props.title}</a>
+                        <a target="_blank" rel="noopener noreferrer" href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`}>{props.title}</a>
                     </h3>
                     <p dangerouslySetInnerHTML={{ __html: props.description.substring(0, 200) }}></p>
                 </div>

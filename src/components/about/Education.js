@@ -24,13 +24,13 @@ const Education = (props) => {
     ];
 
     const detailsRenderer = eductionDetails.map((education, i) => 
-        <Accordion key={i} title={education.title} active={i == 0}>
+        <Accordion key={i} title={education.title} active={i === 0}>
             <EducationInfo name={education.name} year={education.year} percentage={education.percentage} />
         </Accordion>
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="education">
             <div className="container">
                 <h6 className="section-label">Education</h6>
                 <h2 className="section-head">Education</h2><br/>

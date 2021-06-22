@@ -6,29 +6,33 @@ import "../../styles/Accordion.css";
 const Accordion = (props) => {
     const [setActive, setActiveState] = useState("");
     const [setHeight, setHeightState] = useState("0px");
-    const [setRotate, setRotateState] = useState("accordion__icon");
+    const [setRotate, setRotateState] = useState("rotate");
 
     const content = useRef(null);
 
-    function toggleAccordion() {
+    const toggleAccordion = () => {
         setActiveState(setActive === "" ? "active" : "");
         setHeightState(
             setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
         );
         setRotateState(
-            setActive === "active" ? "accordion__icon" : "accordion__icon rotate"
+            setActive === "active" ? "" : "rotate"
         );
-    }
+    };
 
     useEffect(() => {
-        if (props.active) toggleAccordion();
-    }, []);
+        if (props.active) {
+            setActiveState("active")
+            setHeightState(`${content.current.scrollHeight}px`)
+            setRotateState("rotate")
+        }
+    }, [props.active]);
 
     return (
         <div className="accordion__section">
             <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
                 <p className="accordion__title">{props.title}</p>
-                <Chevron className={`${setRotate}`} width={10} fill={"lightgray"} />
+                <Chevron className={`accordion__icon ${setRotate}`} width={10} fill={"lightgray"} />
             </button>
             <div ref={content} style={{ maxHeight: `${setHeight}` }}
                 className="accordion__content">

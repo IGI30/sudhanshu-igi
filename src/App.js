@@ -16,7 +16,7 @@ import Footer from './components/footer/Footer';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+// import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   apiKey: "AIzaSyDhW7apZs2sHtxaSESvMQJqXrIWnKwFD0o",
@@ -28,19 +28,19 @@ firebase.initializeApp({
   measurementId: "G-VNPZJ8306L"
 });
 
-const firestore = firebase.firestore();
+// const firestore = firebase.firestore();
 
 function App() {
   return (
     <div className="App">
         <NavBar>
-            <NavItem title="About"/>
-            <NavItem title="Skills"/>
-            <NavItem title="Education"/>
-            <NavItem title="Experience"/>
-            <NavItem title="Work"/>
-            <NavItem title="Blog"/>
-            <NavItem title="Contact"/>
+            <NavItem title="About" link="/#about" />
+            <NavItem title="Skills" link="/#skills" />
+            <NavItem title="Education" link="/#education" />
+            <NavItem title="Experience" link="/#experience" />
+            <NavItem title="Work" link="/#work" />
+            <NavItem title="Blog" link="/#recentBlog" />
+            <NavItem title="Contact" link="/#contact" />
         </NavBar>
         <Landing/>
         <About/>

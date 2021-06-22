@@ -53,7 +53,7 @@ const Experience = (props) => {
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="experience">
             <div className="container">
                 <h6 className="section-label">Experience</h6>
                 <h2 className="section-head">Work Experience</h2><br/>
@@ -81,7 +81,7 @@ const TimelineCard = (props) => {
                 <div className="timeline-label">
                     <h2>{ props.timeline.position } <i>at { props.timeline.organization }</i></h2>
                     <h6><span>{ props.timeline.year }</span></h6>
-                    <p dangerouslySetInnerHTML={{ __html: props.timeline.description }}>{  }</p>
+                    <p dangerouslySetInnerHTML={{ __html: props.timeline.description }}></p>
                 </div>
             </div>
         </article>

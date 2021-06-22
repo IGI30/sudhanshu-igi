@@ -5,32 +5,32 @@ const Expertise = (props) => {
         {
             'icon': 'mobile',
             'title': 'Mobile App',
-            'description': 'Full Production ready development of Android Application'
+            'description': 'Full Production-ready development of Android apps based on social media, on-device AI, and gaming.'
         },
         {
             'icon': 'globe',
             'title': 'Web App',
-            'description': 'Web Separated they live in Bookmarksgrove right at the coast of the Semantics'
+            'description': 'Development of applications based on e-commerce, inventory management, blog, and dashboards.'
         },
         {
             'icon': 'database',
             'title': 'Data Science',
-            'description': 'Separated they live in Bookmarksgrove right at the coast of the Semantics'
+            'description': 'Expertise in training AI/ML models based on deep learning using CNN, image processing and recommendation systems.'
         },
         {
             'icon': 'gamepad',
             'title': 'Game Dev',
-            'description': 'Separated they live in Bookmarksgrove right at the coast of the Semantics'
+            'description': 'Experience in development of 2-dimensional games for android, windows and, cross-platform using Unity.'
         },
         {
-            'icon': 'mobile',
-            'title': 'Game Dev',
-            'description': 'Separated they live in Bookmarksgrove right at the coast of the Semantics'
+            'icon': 'bar-chart',
+            'title': 'Data Analytics',
+            'description': 'Expertise in finding the solution to a problem through deep analysis of data and making data-driven decisions.'
         },
         {
-            'icon': 'mobile',
-            'title': 'Mobile App',
-            'description': 'Separated they live in Bookmarksgrove right at the coast of the Semantics'
+            'icon': 'free-code-camp',
+            'title': 'Technical Advisor',
+            'description': 'Provide technical expertise, coordinate technicians activities and recommendation of technological improvements.'
         }
     ];
 

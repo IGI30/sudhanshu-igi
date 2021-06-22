@@ -3,7 +3,7 @@ import React from "react";
 const Contact = (props) => {
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="contact">
             <div className="container">
                 <h6 className="section-label">Get in Touch</h6>
                 <h2 className="section-head">Contact</h2><br />
@@ -14,7 +14,7 @@ const Contact = (props) => {
                                 <i className="fa fa-envelope"></i>
                             </div>
                             <div className="contact-card-text">
-                                <p><a onClick={(event) => event.preventDefault()} href="#">sudhanshuigi@gmail.com</a></p>
+                                <p><a target="_blank" rel="noopener noreferrer" href="mailto:sudhanshuigi@gmail.com">sudhanshuigi@gmail.com</a></p>
                             </div>
                         </div>
                         <div className="contact-card" >
@@ -36,7 +36,7 @@ const Contact = (props) => {
                     </div>
                     <div className="col-md-7">
                         <div className="row mb-5">
-                            <div className="col-md-10 offset-md-1">
+                            <div className="col-md-11 offset-md-1">
                                 <form action="" className="contact-form">
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Name" autoComplete="off" />

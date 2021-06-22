@@ -35,12 +35,12 @@ const Skills = (props) => {
     );
 
     return (
-        <section className="full-section">
+        <section className="full-section" id="skills">
             <div className="container">
                 <h6 className="section-label">My Speciality</h6>
                 <h2 className="section-head">My Skills</h2><br/>
                 <p>
-                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.
+                My skills include the development of production-ready applications, memory and performance optimization, technological improvements for an organization or a business, and can deliver solutions to advanced problems using Artificial Intelligence and Machine Learning.
                 </p>
                 <div className="row mt-5">
                     { skillsRenderer }

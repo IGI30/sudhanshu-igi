@@ -14,7 +14,7 @@ const Landing = (props) => {
         marginBottom: '20px',
         marginRight: '15px',
         marginLeft: '15px',
-        width: '80px'
+        width: '60px'
     };
 
     const hrStyle = {
@@ -63,11 +63,11 @@ const Landing = (props) => {
                 </ul>
                 <br/>
                 <p>Welcome to Sudhanshu IGI's <u>homepage</u>.
-                <br/>I'm a data analysis and data visualisation
+                <br/>I'm a ambitious software developer, data analyst and data visualisation
                     specialist currently working as a Senior Software Engineer for <a className="internal-anchor" href="https://research.samsung.com/sri-b">Samsung Research</a>.
                 </p><br/>
                 <a className="btn m-btn-primary btn-xl text-uppercase"
-                href="#description">Portfolio</a>
+                href="#about">Portfolio</a>
                 <a className="btn m-btn-primary btn-xl text-uppercase ms-2"
                 href="#contact">Contact</a>
             </div>
