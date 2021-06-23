@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+
 
 const Contact = (props) => {
+
+    const [message, setMessage] = useState("");
+    const handleChange = (e) => {
+        setMessage(e.target.value);
+    };
+
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => console.log(data);
 
     return (
         <section className="full-section" id="contact">
@@ -37,18 +47,31 @@ const Contact = (props) => {
                     <div className="col-md-7">
                         <div className="row mb-5">
                             <div className="col-md-11 offset-md-1">
-                                <form action="" className="contact-form">
+                                <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" placeholder="Name" autoComplete="off" />
+                                        <input {...register("name", { required: true })}
+                                            type="text" className="form-control" placeholder="Name" autoComplete="off" />
+                                        {errors.name && <span>May I ask you what your name is 😊</span>}
                                     </div>
                                     <div className="form-group">
-                                        <input type="text" className="form-control" placeholder="Email" />
+                                        <input {...register("email", { required: true, pattern: {
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                            message: "Can you please check the email address 😅"
+                                        } })}
+                                            type="text" className="form-control" placeholder="Email" />
+                                        {errors.email?.type === "required" && <span>Please mention your email address 🙃</span>}
+                                        {errors.email?.type === "pattern" && <span>{errors.email?.message}</span>}
                                     </div>
+                                    {/* <div className="form-group">
+                                        <input {...register("subject", { required: true })}
+                                            type="text" className="form-control" placeholder="Subject" />
+                                    </div> */}
                                     <div className="form-group">
-                                        <input type="text" className="form-control" placeholder="Subject" />
-                                    </div>
-                                    <div className="form-group">
-                                        <textarea name="" id="message" cols="30" rows="7" className="form-control" placeholder="Message"></textarea>
+                                        <textarea value={message}
+                                            {...register("message", { required: true })}
+                                            onChange={handleChange}
+                                            className="form-control" placeholder="Message" />
+                                        {errors.message && <span>Please write a message 😊</span>}
                                     </div>
                                     <div className="form-group">
                                         <input type="submit" className="btn m-btn-primary btn-send-message" value="Send Message" />

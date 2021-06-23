@@ -25,6 +25,8 @@ const Landing = (props) => {
         backgroundColor: '#eee'
     };
 
+    const portfolioUrl = "https://firebasestorage.googleapis.com/v0/b/sudhanshu-igi.appspot.com/o/Resume%2FSudhanshu_s_Resume_.pdf?alt=media&token=8990ef7b-80bb-4b38-b837-d4b0bfc93188";
+
     return (
         <header className="masterhead">
             <div className="text-landing">
@@ -67,7 +69,9 @@ const Landing = (props) => {
                     specialist currently working as a Senior Software Engineer for <a className="internal-anchor" href="https://research.samsung.com/sri-b">Samsung Research</a>.
                 </p><br/>
                 <a className="btn m-btn-primary btn-xl text-uppercase"
-                href="#about">Portfolio</a>
+                download="Sudhanshu_s_Resume.pdf"
+                target="_blank" rel="noopener noreferrer"
+                href={portfolioUrl}>Portfolio</a>
                 <a className="btn m-btn-primary btn-xl text-uppercase ms-2"
                 href="#contact">Contact</a>
             </div>
