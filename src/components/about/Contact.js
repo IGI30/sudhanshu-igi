@@ -1,16 +1,39 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
+// import firebase from 'firebase/app';
+// import 'firebase/firestore';
 
 const Contact = (props) => {
-
+    
     const [message, setMessage] = useState("");
     const handleChange = (e) => {
         setMessage(e.target.value);
     };
 
+    const onSubmit = async(data) => {
+        console.log(data);
+    }
+
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+
+    const cardDetails = [
+        {
+            'icon': 'envelope',
+            'content': '<a target="_blank" rel="noopener noreferrer" href="mailto:sudhanshuigi@gmail.com">sudhanshuigi@gmail.com</a>'
+        },
+        {
+            'icon': 'map',
+            'content': 'Aishwarya Enclave, Kothanur, Bangalore, India 560077'
+        },
+        {
+            'icon': 'mobile',
+            'content': `<a href="tel://+917905307155">+91 79053 07155</a>`
+        }
+    ];
+
+    const cardRenderer = cardDetails.map((card, i) => 
+        <ContactCard {...card} key={i} />
+    )
 
     return (
         <section className="full-section" id="contact">
@@ -19,30 +42,7 @@ const Contact = (props) => {
                 <h2 className="section-head">Contact</h2><br />
                 <div className="row">
                     <div className="col-md-5">
-                        <div className="contact-card" >
-                            <div className="contact-card-icon">
-                                <i className="fa fa-envelope"></i>
-                            </div>
-                            <div className="contact-card-text">
-                                <p><a target="_blank" rel="noopener noreferrer" href="mailto:sudhanshuigi@gmail.com">sudhanshuigi@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div className="contact-card" >
-                            <div className="contact-card-icon">
-                                <i className="fa fa-map"></i>
-                            </div>
-                            <div className="contact-card-text">
-                                <p>Aishwarya Enclave, Kothanur, Bangalore, India 560077</p>
-                            </div>
-                        </div>
-                        <div className="contact-card" >
-                            <div className="contact-card-icon">
-                                <i className="fa fa-mobile"></i>
-                            </div>
-                            <div className="contact-card-text">
-                                <p><a onClick={(event) => event.preventDefault()} href="tel://">+91 79053 07155</a></p>
-                            </div>
-                        </div>
+                        { cardRenderer }
                     </div>
                     <div className="col-md-7">
                         <div className="row mb-5">
@@ -62,10 +62,6 @@ const Contact = (props) => {
                                         {errors.email?.type === "required" && <span>Please mention your email address 🙃</span>}
                                         {errors.email?.type === "pattern" && <span>{errors.email?.message}</span>}
                                     </div>
-                                    {/* <div className="form-group">
-                                        <input {...register("subject", { required: true })}
-                                            type="text" className="form-control" placeholder="Subject" />
-                                    </div> */}
                                     <div className="form-group">
                                         <textarea value={message}
                                             {...register("message", { required: true })}
@@ -85,5 +81,18 @@ const Contact = (props) => {
         </section>
     );
 };
+
+const ContactCard = (props) => {
+    return (
+        <div className="contact-card" >
+            <div className="contact-card-icon">
+                <i className={`fa fa-${props.icon}`}></i>
+            </div>
+            <div className="contact-card-text">
+                <p dangerouslySetInnerHTML={{ __html: props.content }}></p>
+            </div>
+        </div>
+    )
+}
 
 export default Contact;
