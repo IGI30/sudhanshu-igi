@@ -1,17 +1,35 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-// import firebase from 'firebase/app';
-// import 'firebase/firestore';
+import { firebaseApp, firestore } from "../../services/firebase";
 
 const Contact = (props) => {
-    
+    const messagesRef = firestore.collection('messages');
+
     const [message, setMessage] = useState("");
-    const handleChange = (e) => {
+    const [loading, setLoading] = useState(false);
+
+    const handleChange = async(e) => {
         setMessage(e.target.value);
     };
 
-    const onSubmit = async(data) => {
-        console.log(data);
+    const onSubmit = async(data, e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const response = await fetch('https://geolocation-db.com/json/');
+        const clientData = await response.json();
+
+        await messagesRef.add({
+            ...data,
+            clientData: clientData,
+            read: false,
+            deleted: false,
+            createdAt: firebaseApp.firestore.FieldValue.serverTimestamp()
+        });
+
+        setMessage("");
+        e.target.reset();
+        setLoading(false);
     }
 
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -50,7 +68,7 @@ const Contact = (props) => {
                                 <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                                     <div className="form-group">
                                         <input {...register("name", { required: true })}
-                                            type="text" className="form-control" placeholder="Name" autoComplete="off" />
+                                            disabled={loading} type="text" className="form-control" placeholder="Name" autoComplete="off" />
                                         {errors.name && <span>May I ask you what your name is 😊</span>}
                                     </div>
                                     <div className="form-group">
@@ -58,19 +76,22 @@ const Contact = (props) => {
                                             value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                                             message: "Can you please check the email address 😅"
                                         } })}
-                                            type="text" className="form-control" placeholder="Email" />
+                                            disabled={loading} type="text" className="form-control" placeholder="Email" />
+                                        
                                         {errors.email?.type === "required" && <span>Please mention your email address 🙃</span>}
                                         {errors.email?.type === "pattern" && <span>{errors.email?.message}</span>}
                                     </div>
                                     <div className="form-group">
-                                        <textarea value={message}
+                                        <textarea value={message} disabled={loading}
                                             {...register("message", { required: true })}
                                             onChange={handleChange}
                                             className="form-control" placeholder="Message" />
                                         {errors.message && <span>Please write a message 😊</span>}
                                     </div>
                                     <div className="form-group">
-                                        <input type="submit" className="btn m-btn-primary btn-send-message" value="Send Message" />
+                                        <button disabled={loading} type="submit" className="btn m-btn-primary btn-send-message">
+                                            Send Message {loading? <i className="fa fa-spinner" aria-hidden="true"></i>: ''}
+                                        </button>
                                     </div>
                                 </form>
                             </div>
