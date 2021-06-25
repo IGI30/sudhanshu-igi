@@ -1048,7 +1048,7 @@ button.load-more:hover {
 }
 
 .contact-form .form-group textarea.form-control {
-  height: 8rem;
+  min-height: 8rem;
 }
 
 .form-group .btn.m-btn-primary {
@@ -1064,4 +1064,9 @@ button.load-more:hover {
 .form-group .btn.m-btn-primary:hover {
   background-color: var(--color-1) !important;
   color: #fff;
+}
+
+.form-group span {
+  font-size: small;
+  color: var(--color-3);
 }
