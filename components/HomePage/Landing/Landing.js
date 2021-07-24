@@ -1,5 +1,4 @@
 import React from "react";
-import igiLogo from "../../../assets/images/home_single_big_white.png";
 
 const Landing = (props) => {
     const nameStyle = {
@@ -32,7 +31,7 @@ const Landing = (props) => {
             <div className="text-landing">
                 <p style={ nameStyle } className="ps-2">SUDHANSHU</p>
                 <img style={ logoStyle }
-                    src={ igiLogo } alt="IGI" />
+                    src="/assets/images/home_single_big_white.png" alt="IGI" />
                 <p style={ nameStyle }>IGI</p>
                 <hr style={ hrStyle } />
                 <br/>

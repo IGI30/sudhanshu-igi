@@ -1,6 +1,5 @@
 import React from "react";
 import { Nav, Tab } from "react-bootstrap";
-import codeImage from "../../../assets/images/img-code.jpeg";
 
 const Work = (props) => {
     const projectDetails = {
@@ -144,7 +143,7 @@ const Work = (props) => {
 
 const ProjectCard = (props) => {
     const projectStyle = {
-        'backgroundImage': `url(${codeImage})`
+        'backgroundImage': `url(/assets/images/img-code.jpeg)`
         // backgroundImage: 'url(https://source.unsplash.com/featured/?react)'
     };
 

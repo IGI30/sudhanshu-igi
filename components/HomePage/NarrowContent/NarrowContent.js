@@ -1,7 +1,5 @@
 import React from "react";
 
-import narrowBg from "../../../assets/images/narrow-bg.webp";
-
 const NarrowContent = (props) => {
     const contentDetails = [
         {
@@ -27,7 +25,7 @@ const NarrowContent = (props) => {
     );
 
     return (
-        <div className="narrow-counters" style={ { backgroundImage : `url(${narrowBg})` } }>
+        <div className="narrow-counters" style={ { backgroundImage : `url(/assets/images/narrow-bg.webp)` } }>
             <div className="overlay"></div>
             <div className="counters-narrow-counters">
                 <div className="row">

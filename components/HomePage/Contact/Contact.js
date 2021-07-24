@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { firebaseApp, firestore } from "../../../services/firebase";
+import firebase from "../../../utils/firebase";
+import db from "../../../utils/firestore";
 
 const Contact = (props) => {
-    const messagesRef = firestore.collection('messages');
+    const messagesRef = db.collection('messages');
 
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
@@ -24,7 +25,7 @@ const Contact = (props) => {
             clientData: clientData,
             read: false,
             deleted: false,
-            createdAt: firebaseApp.firestore.FieldValue.serverTimestamp()
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
         });
 
         setMessage("");

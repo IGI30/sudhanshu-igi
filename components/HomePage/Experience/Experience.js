@@ -1,7 +1,3 @@
-import React from "react";
-
-import "./Timeline.css";
-
 const Experience = (props) => {
     const experienceDetails = [
         {
@@ -81,7 +77,7 @@ const TimelineCard = (props) => {
                 <div className="timeline-label">
                     <h2>{ props.timeline.position } <i>at { props.timeline.organization }</i></h2>
                     <h6><span>{ props.timeline.year }</span></h6>
-                    <p dangerouslySetInnerHTML={{ __html: props.timeline.description }}></p>
+                    <div dangerouslySetInnerHTML={{ __html: props.timeline.description }}></div>
                 </div>
             </div>
         </article>

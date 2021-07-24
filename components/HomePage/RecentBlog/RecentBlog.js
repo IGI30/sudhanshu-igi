@@ -85,7 +85,7 @@ const BlogCard = (props) => {
                     <h3>
                         <a target="_blank" rel="noopener noreferrer" href={`https://www.drfeeds.com/blog/post/${props.id}/${props.slug}`}>{props.title}</a>
                     </h3>
-                    <p dangerouslySetInnerHTML={{ __html: props.description.substring(0, 200) }}></p>
+                    <div dangerouslySetInnerHTML={{ __html: props.description.substring(0, 200) }}></div>
                 </div>
             </div>
         </div>
