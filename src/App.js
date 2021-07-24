@@ -1,17 +1,19 @@
 import './App.css';
-import {NavBar, NavItem} from './components/nav/Nav';
 import React from "react";
-import Landing from "./components/landing/Landing";
-import About from './components/about/About';
-import Expertise from './components/about/Expertise';
-import Skills from './components/about/Skills';
-import Education from './components/about/Education';
-import Experience from './components/about/Experience';
-import Work from './components/about/Work';
-import NarrowContent from './components/about/NarrowContent';
-import RecentBlog from './components/about/RecentBlog';
-import Contact from './components/about/Contact';
-import Footer from './components/footer/Footer';
+
+import Landing from "./components/HomePage/Landing";
+import About from './components/HomePage/About';
+import Expertise from './components/HomePage/Expertise';
+import Skills from './components/HomePage/Skills';
+import Education from './components/HomePage/Education';
+import Experience from './components/HomePage/Experience';
+import Work from './components/HomePage/Work';
+import NarrowContent from './components/HomePage/NarrowContent';
+import RecentBlog from './components/HomePage/RecentBlog';
+import Contact from './components/HomePage/Contact';
+
+import { NavBar, NavItem } from './components/Nav';
+import Footer from './components/Footer';
 
 import 'fontsource-roboto';
 

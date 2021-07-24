@@ -1,6 +1,6 @@
 import React from "react";
 
-import narrowBg from "../../assets/images/narrow-bg.webp";
+import narrowBg from "../../../assets/images/narrow-bg.webp";
 
 const NarrowContent = (props) => {
     const contentDetails = [
@@ -18,7 +18,7 @@ const NarrowContent = (props) => {
         },
         {
             'name': 'Books Read',
-            'value': 10
+            'value': 11
         }
     ];
 

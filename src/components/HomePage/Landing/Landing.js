@@ -1,5 +1,5 @@
 import React from "react";
-import igiLogo from "../../assets/images/home_single_big_white.png";
+import igiLogo from "../../../assets/images/home_single_big_white.png";
 
 const Landing = (props) => {
     const nameStyle = {

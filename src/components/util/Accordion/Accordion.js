@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import Chevron from "./Chevron";
+import Chevron from "../Chevron";
 
-import "../../styles/Accordion.css";
+import "./Accordion.css";
 
 const Accordion = (props) => {
     const [setActive, setActiveState] = useState("");

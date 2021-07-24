@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../styles/Timeline.css";
+import "./Timeline.css";
 
 const Experience = (props) => {
     const experienceDetails = [

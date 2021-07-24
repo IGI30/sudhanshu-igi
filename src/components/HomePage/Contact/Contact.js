@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { firebaseApp, firestore } from "../../services/firebase";
+import { firebaseApp, firestore } from "../../../services/firebase";
 
 const Contact = (props) => {
     const messagesRef = firestore.collection('messages');

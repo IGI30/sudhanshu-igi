@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Tab } from "react-bootstrap";
-import codeImage from "../../assets/images/img-code.jpeg";
+import codeImage from "../../../assets/images/img-code.jpeg";
 
 const Work = (props) => {
     const projectDetails = {

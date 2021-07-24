@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../util/Accordion";
+import Accordion from "../../util/Accordion";
 
 const Education = (props) => {
     const eductionDetails = [
