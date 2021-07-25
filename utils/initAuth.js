@@ -6,8 +6,8 @@ const TWELVE_DAYS_IN_MS = 12 * 60 * 60 * 24 * 1000
 const initAuth = () => {
   init({
     debug: false,
-    authPageURL: '/auth',
-    appPageURL: '/',
+    authPageURL: '/admin/login',
+    appPageURL: '/admin',
     loginAPIEndpoint: '/api/login',
     logoutAPIEndpoint: '/api/logout',
     firebaseAdminInitConfig: {
@@ -44,6 +44,8 @@ const initAuth = () => {
       signed: true,
     },
   })
+
+  
 }
 
 export default initAuth

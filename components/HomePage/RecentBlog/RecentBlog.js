@@ -1,5 +1,6 @@
 import React from "react";
 import Moment from 'moment';
+import Image from 'next/image'
 
 const RecentBlog = (props) => {
     const recentPosts = [

@@ -32,7 +32,7 @@ const About = (props) => {
                 <h6 className="section-label">About Us</h6>
                 <h2 className="section-head">Who am I?</h2><br/>
                 <p>
-                    <b><u>Hi, I'm Sudhanshu IGI On my way to help and inspire the world</u></b>. I'm an ambitious and 10x developer who is not restricted by any specific domain or technology. I have a learning attitude and when needed I will go out of my way to learn it.
+                    <b><u>Hi, I&apos;m Sudhanshu IGI On my way to help and inspire the world</u></b>. I&apos;m an ambitious and 10x developer who is not restricted by any specific domain or technology. I have a learning attitude and when needed I will go out of my way to learn it.
                 </p>
                 <p>
                     I code daily. I read daily. I learn daily. I help others. I set my goals. I have a positive mindset and I am a good self-taught software engineer.
