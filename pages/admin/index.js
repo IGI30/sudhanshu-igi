@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import {
   useAuthUser,
   withAuthUser,
@@ -52,6 +53,12 @@ const Admin = () => {
   return (
     <div>
       <Header email={AuthUser.email} signOut={AuthUser.signOut} />
+      <Head>
+          <title>Admin Home</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" 
+              content="Welcome to Admin Dashboard" />
+      </Head>
       {isAdmin ? (
         <div style={styles.content}>
           <div style={styles.infoTextContainer}>

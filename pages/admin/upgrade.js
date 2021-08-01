@@ -1,9 +1,16 @@
 import { getFirebaseAdmin, withAuthUser } from 'next-firebase-auth'
+import Head from 'next/head'
 // ...other imports
 
 const Upgrade = ({result}) => {
   return (
     <div>
+      <Head>
+          <title>Admin Upgrade</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" 
+              content="Welcome to Admin Role Upgrade Page" />
+      </Head>
       {result? 'Admin User': 'None'} 
     </div>
   )

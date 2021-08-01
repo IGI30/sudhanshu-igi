@@ -1,6 +1,7 @@
 {
   "name": "sudhanshu-igi",
   "version": "0.1.0",
+  "main": "function.js",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.0",
@@ -8,6 +9,7 @@
     "bootstrap": "^5.0.1",
     "firebase": "^8.6.8",
     "firebase-admin": "^9.11.0",
+    "firebase-functions": "^3.14.1",
     "font-awesome": "^4.7.0",
     "fontsource-roboto": "^4.0.0",
     "moment": "^2.29.1",
@@ -25,9 +27,13 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "export": "next export -o build"
+    "export": "next export -o build",
+    "deploy": "npm run build && cross-env NODE_ENV=production firebase deploy --only functions,hosting",
+    "deploy-function": "cross-env NODE_ENV=production firebase deploy --only functions",
+    "deploy-hosting": "npm run build && cross-env NODE_ENV=production firebase deploy --only hosting"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^7.27.0",
     "eslint-config-next": "^11.0.1"
   }

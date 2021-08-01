@@ -9,8 +9,16 @@
     ],
     "rewrites": [
       {
+        "source": "/admin{,/**}",
+        "function": "nextServer"
+      },
+      {
+        "source": "/api/**",
+        "function": "nextServer"
+      },
+      {
         "source": "**",
-        "destination": "/index.html"
+        "function": "nextServer"
       }
     ]
   },
@@ -20,5 +28,25 @@
   },
   "storage": {
     "rules": "storage.rules"
+  },
+  "functions": {
+    "source": ".",
+    "runtime": "nodejs14",
+    "ignore": [
+      ".firebase/**",
+      ".github/**",
+      ".idea/**",
+      "**/.next/cache/**",
+      "**/.vscode/**",
+      "**/node_modules/**",
+      "**/public/**",
+      "**/src/**",
+      "components/**",
+      "pages/**",
+      "styles/**",
+      "utils/**",
+      ".firebaserc",
+      "firebase.json"
+    ]
   }
 }
